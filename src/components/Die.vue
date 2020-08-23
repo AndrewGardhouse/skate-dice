@@ -1,22 +1,22 @@
 <template>
   <div class="die">
-    <!-- <Heelflip></Heelflip> -->
+    <component :is="selectedSide"></component>
   </div>
 </template>
 
 <script>
-// import Fakie from './faces/Fakie.vue';
-// import Nollie from './faces/Nollie.vue';
-// import StanceSwitch from './faces/StanceSwitch.vue';
-// import Regular from './faces/Regular.vue';
-// import BackSide from './faces/Backside.vue';
-// import FrontSide from './faces/FrontSide.vue';
-// import Heelflip from './faces/Heelflip.vue';
-// import Kickflip from './faces/Kickflip.vue';
-// import ThreeSixty from './faces/ThreeSixty.vue';
-// import OneEighty from './faces/OneEighty.vue';
-// import SkateDiceFace from './faces/SkateDice.vue';
-// import WildFace from './faces/Wild.vue';
+import Fakie from './faces/Fakie.vue';
+import Nollie from './faces/Nollie.vue';
+import StanceSwitch from './faces/StanceSwitch.vue';
+import Regular from './faces/Regular.vue';
+import BackSide from './faces/Backside.vue';
+import FrontSide from './faces/FrontSide.vue';
+import Heelflip from './faces/Heelflip.vue';
+import Kickflip from './faces/Kickflip.vue';
+import ThreeSixty from './faces/ThreeSixty.vue';
+import OneEighty from './faces/OneEighty.vue';
+import SkateDice from './faces/SkateDice.vue';
+import Wild from './faces/Wild.vue';
 
 export default {
   props: {
@@ -24,20 +24,28 @@ export default {
       type: Array,
       required: true,
     },
+    selectedSideIndex: {
+      type: Number,
+    },
   },
   components: {
-    // Fakie,
-    // Nollie,
-    // StanceSwitch,
-    // Regular,
-    // BackSide,
-    // FrontSide,
-    // Heelflip,
-    // Kickflip,
-    // ThreeSixty,
-    // OneEighty,
-    // SkateDiceFace,
-    // WildFace,
+    Fakie,
+    Nollie,
+    StanceSwitch,
+    Regular,
+    BackSide,
+    FrontSide,
+    Heelflip,
+    Kickflip,
+    ThreeSixty,
+    OneEighty,
+    SkateDice,
+    Wild,
+  },
+  computed: {
+    selectedSide() {
+      return this.sides[this.selectedSideIndex];
+    },
   },
 };
 </script>

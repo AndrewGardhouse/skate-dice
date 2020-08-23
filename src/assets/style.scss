@@ -24,7 +24,7 @@ button {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: auto repeat(2, 1fr) auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 .title {
@@ -67,9 +67,16 @@ button {
     font-size: 2em;
 }
 
-.tricklist__title {
-    text-align: center;
-    margin: 0;
+.die__face--nollie {
+    font-size: 2.3em;
+}
+
+.die__face--switch {
+    font-size: 2.3em;
+}
+
+.die__face--frontside, .die__face--backside {
+    font-size: 2.5em;
 }
 
 .rolldice__button {

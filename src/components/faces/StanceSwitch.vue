@@ -1,5 +1,5 @@
 <template>
-  <div class="die__face">
+  <div class="die__face die__face--switch">
     <span>SWITCH</span>
   </div>
 </template>
