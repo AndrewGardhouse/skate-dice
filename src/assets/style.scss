@@ -57,9 +57,14 @@ button {
     margin: auto;
     flex-direction: column;
     font-size: 3em;
+    text-align: center;
     span {
         line-height: .8;
     }
+}
+
+.die__face--regular {
+    font-size: 2em;
 }
 
 .tricklist__title {
