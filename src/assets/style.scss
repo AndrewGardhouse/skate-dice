@@ -8,6 +8,16 @@ html, body {
     margin: 0;
 }
 
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 #app {
     height: 100%;
     width: 100%;
@@ -16,7 +26,7 @@ html, body {
 }
 
 .title {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 0.25em;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +40,7 @@ html, body {
 
 .dice {
     display: grid;
-    margin: 2em auto 2em;
+    margin: 2em auto 1em;
     gap: 1em;
     grid-template-columns: 21vh 21vh;
     grid-template-rows: 21vh 21vh;
@@ -39,4 +49,15 @@ html, body {
 .tricklist__title {
     text-align: center;
     margin: 0;
+}
+
+.rolldice__button {
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    display: block;
+    padding: 0.5em 0.75em;
+    border-radius: 15px;
+    font-size: 1.25em;
 }

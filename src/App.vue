@@ -13,8 +13,11 @@
     <div class="tricklist">
       <h2 class="tricklist__title">Trick List</h2>
     </div>
-    <div class="rolldice-button">
-      <button type="button" name="button">Roll 'Em</button>
+    <div class="rolldice">
+      <button
+        type="button"
+        name="button"
+        class="rolldice__button">SET THE TRICK</button>
     </div>
   </div>
 </template>
