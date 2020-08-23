@@ -1,3 +1,5 @@
+$die-size: 21vh;
+
 html, body {
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
     font-family: 'Source Sans Pro', sans-serif;
@@ -42,8 +44,8 @@ button {
     display: grid;
     margin: 2em auto 1em;
     gap: 1em;
-    grid-template-columns: 21vh 21vh;
-    grid-template-rows: 21vh 21vh;
+    grid-template-columns: repeat(2, $die-size);
+    grid-template-rows: repeat(2, $die-size);
 }
 
 .tricklist__title {
@@ -56,8 +58,8 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
+    width: calc(#{$die-size} + #{$die-size} + 1em);
     display: block;
     padding: 0.5em 0.75em;
-    border-radius: 15px;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }

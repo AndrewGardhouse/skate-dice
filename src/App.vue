@@ -17,7 +17,7 @@
       <button
         type="button"
         name="button"
-        class="rolldice__button">SET THE TRICK</button>
+        class="rolldice__button">ROLL 'EM</button>
     </div>
   </div>
 </template>
