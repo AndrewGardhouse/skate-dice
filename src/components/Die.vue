@@ -1,6 +1,10 @@
 <template>
-  <div class="die">
-    <component :is="selectedSide"></component>
+  <div
+    class="die"
+    :class="{ 'die--roll': toggleRoll }">
+    <component
+      :is="selectedSide">
+    </component>
   </div>
 </template>
 
@@ -26,6 +30,9 @@ export default {
     },
     selectedSideIndex: {
       type: Number,
+    },
+    toggleRoll: {
+      type: Boolean,
     },
   },
   components: {
@@ -55,5 +62,11 @@ export default {
   background: red;
   color: white;
   border-radius: 25px;
+  transform-origin: center center;
+  transition: transform .5s;
+}
+
+.die--roll {
+  transform: rotate(360deg);
 }
 </style>

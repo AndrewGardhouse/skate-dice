@@ -1,7 +1,9 @@
 <template>
   <Die
     :sides="['Wild', 'SkateDice', 'FrontSide', 'BackSide', 'FrontSide', 'BackSide']"
-    :selectedSideIndex="selectedSideIndex"></Die>
+    :selected-side-index="selectedSideIndex"
+    :toggle-roll="toggleRoll">
+  </Die>
 </template>
 
 <script>
@@ -15,6 +17,9 @@ export default {
     selectedSideIndex: {
       type: Number,
       required: true,
+    },
+    toggleRoll: {
+      type: Boolean,
     },
   },
 };

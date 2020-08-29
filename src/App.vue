@@ -7,9 +7,10 @@
     <div class="dice">
       <component
         v-for="(die, index) in allDice"
-        :key="`${die}-${index}`"
         :is="die"
-        :selectedSideIndex="selectedSides[index]">
+        :key="`${die}-${index}`"
+        :selected-side-index="selectedSides[index]"
+        :toggle-roll="toggleRoll">
       </component>
     </div>
     <div class="rolldice">
@@ -47,17 +48,21 @@ export default {
         SpinDegreeDie,
         FlipTrickDie,
       ],
+      toggleRoll: false,
     };
   },
   methods: {
     rollDice() {
-      this.selectedSides = [
-        random(0, 5),
-        random(0, 5),
-        random(0, 5),
-        random(0, 5),
-      ];
-      this.allDice = shuffle(this.allDice);
+      this.toggleRoll = !this.toggleRoll;
+      setTimeout(() => {
+        this.selectedSides = [
+          random(0, 5),
+          random(0, 5),
+          random(0, 5),
+          random(0, 5),
+        ];
+        this.allDice = shuffle(this.allDice);
+      }, 499);
     },
   },
 };
