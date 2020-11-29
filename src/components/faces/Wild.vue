@@ -1,4 +1,4 @@
-<template lang="html">
+<template lang="html" functional>
   <div class="die__face">
     <div class="board board--top">
       <div class="board__bolts board__bolts--left">

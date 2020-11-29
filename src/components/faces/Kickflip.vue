@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="die__face">
     <span>KICK</span>
     <span>FLIP</span>

@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="die__face die__face--backside">
     <span>BACK</span>
     <span>SIDE</span>
