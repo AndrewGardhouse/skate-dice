@@ -13,6 +13,26 @@ export default {
   components: {
     Die,
   },
+  data() {
+    return {
+      easyMode: [
+        'Wild',
+        'SkateDice',
+        'OneEighty',
+        'OneEighty',
+        'OneEighty',
+        'SkateDice',
+      ],
+      standardMode: [
+        'Wild',
+        'SkateDice',
+        'OneEighty',
+        'ThreeSixty',
+        'OneEighty',
+        'ThreeSixty',
+      ],
+    };
+  },
   props: {
     selectedSideIndex: {
       type: Number,
