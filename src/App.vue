@@ -20,6 +20,7 @@
         @click="rollDice"
         class="rolldice__button">ROLL 'EM</button>
     </div>
+    <mode-switch></mode-switch>
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import DirectionDie from './components/DirectionDie.vue';
 import SpinDegreeDie from './components/SpinDegreeDie.vue';
 import FlipTrickDie from './components/FlipTrickDie.vue';
 import StanceDie from './components/StanceDie.vue';
+import ModeSwitch from './components/ModeSwitch.vue';
 
 export default {
   name: 'App',
@@ -38,6 +40,7 @@ export default {
     DirectionDie,
     FlipTrickDie,
     StanceDie,
+    ModeSwitch,
   },
   data() {
     return {
