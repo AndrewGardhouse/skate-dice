@@ -8,19 +8,12 @@
 
 <script>
 import Die from './Die.vue';
+import DieMixin from '../mixins/DieMixin';
 
 export default {
+  mixins: [DieMixin],
   components: {
     Die,
-  },
-  props: {
-    selectedSideIndex: {
-      type: Number,
-      required: true,
-    },
-    toggleRoll: {
-      type: Boolean,
-    },
   },
 };
 </script>

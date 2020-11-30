@@ -7,10 +7,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
 import Die from './Die.vue';
+import EasyModeMixin from '../mixins/EasyModeMixin';
+import DieMixin from '../mixins/DieMixin';
 
 export default {
+  mixins: [EasyModeMixin, DieMixin],
   components: {
     Die,
   },
@@ -33,21 +35,6 @@ export default {
         'ThreeSixty',
       ],
     };
-  },
-  computed: {
-    ...mapState(['isEasyMode']),
-    sides() {
-      return this.isEasyMode ? this.easyModeFaces : this.standardModeFaces;
-    },
-  },
-  props: {
-    selectedSideIndex: {
-      type: Number,
-      required: true,
-    },
-    toggleRoll: {
-      type: Boolean,
-    },
   },
 };
 </script>
