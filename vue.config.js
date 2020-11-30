@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: 'https://sk8dice.app',
+  publicPath: 'https://sk8diceapp.com',
   outputDir: 'docs',
   pwa: {
     themeColor: '#000000',

@@ -1,4 +1,2 @@
 User-agent: *
 Disallow:
-
-SITEMAP: https://sk8dice.app/sitemap.xml
