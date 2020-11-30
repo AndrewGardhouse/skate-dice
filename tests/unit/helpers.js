@@ -15,9 +15,9 @@ export function testDieFaces(component) {
     },
   });
 
-  expect(wrapper.vm.sides).toBe(wrapper.vm.standardModeFaces);
+  expect(wrapper.vm.sides).toEqual(wrapper.vm.standardModeFaces);
 
   store.state.isEasyMode = true;
 
-  expect(wrapper.vm.sides).toBe(wrapper.vm.easyModeFaces);
+  expect(wrapper.vm.sides).toEqual(wrapper.vm.easyModeFaces);
 }
