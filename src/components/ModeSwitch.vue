@@ -3,7 +3,7 @@
     <div
       class="mode__switch"
       :class="{ 'mode__switch--is-easy-mode': isEasyMode }"
-      @click="toggle">
+      @click="toggleEasyMode">
       <div class="mode__switch-button"></div>
     </div>
     <div class="mode__label">WARM-UP MODE</div>
@@ -11,16 +11,14 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
+
 export default {
-  data() {
-    return {
-      isEasyMode: false,
-    };
+  computed: {
+    ...mapState(['isEasyMode']),
   },
   methods: {
-    toggle() {
-      this.isEasyMode = !this.isEasyMode;
-    },
+    ...mapMutations(['toggleEasyMode']),
   },
 };
 </script>
