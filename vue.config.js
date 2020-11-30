@@ -16,6 +16,7 @@ module.exports = {
       swSrc: 'src/service-worker.js',
       exclude: [
         /\.map$/,
+        /CNAME$/,
         /manifest\.json$/,
       ],
     },
