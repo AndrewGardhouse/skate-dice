@@ -2,24 +2,8 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-underscore-dangle */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-workbox.core.setCacheNameDetails({ prefix: 'just-breathe' });
-
-workbox.routing.registerRoute(
-  /^https:\/\/unpkg.com/,
-  new workbox.strategies.CacheFirst({
-    cacheName: 'basscss',
-    plugins: [
-      new workbox.cacheableResponse.Plugin({
-        statuses: [0, 200],
-      }),
-      new workbox.expiration.Plugin({
-        maxEntries: 60,
-      }),
-    ],
-  }),
-);
+workbox.core.setCacheNameDetails({ prefix: 'sk8-dice' });
 
 workbox.routing.registerRoute(
   /^https:\/\/fonts.(gstatic|googleapis).com(.*)/,
