@@ -1,6 +1,8 @@
-import { shallowMount } from '@vue/test-utils';
 import StanceDie from '@/components/StanceDie.vue';
+import { testDieFaces } from './helpers';
 
-describe('StanceDie.vue', () => {
-  it('shows correct die faces depending on mode', () => {});
+describe('SpinDegreeDie.vue', () => {
+  it('shows correct die faces depending on mode', () => {
+    testDieFaces(StanceDie);
+  });
 });

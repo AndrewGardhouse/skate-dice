@@ -1,12 +1,13 @@
 <template>
   <Die
-    :sides="['Wild', 'SkateDice', 'StanceSwitch', 'Regular', 'Fakie', 'Nollie']"
+    :sides="sides"
     :selected-side-index="selectedSideIndex"
     :toggle-roll="toggleRoll">
   </Die>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import Die from './Die.vue';
 
 export default {
@@ -15,7 +16,7 @@ export default {
   },
   data() {
     return {
-      easyMode: [
+      easyModeFaces: [
         'Wild',
         'SkateDice',
         'Regular',
@@ -23,7 +24,7 @@ export default {
         'Fakie',
         'Fakie',
       ],
-      standardMode: [
+      standardModeFaces: [
         'Wild',
         'SkateDice',
         'StanceSwitch',
@@ -32,6 +33,12 @@ export default {
         'Nollie',
       ],
     };
+  },
+  computed: {
+    ...mapState(['isEasyMode']),
+    sides() {
+      return this.isEasyMode ? this.easyModeFaces : this.standardModeFaces;
+    },
   },
   props: {
     selectedSideIndex: {
