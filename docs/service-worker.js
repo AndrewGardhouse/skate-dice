@@ -1,4 +1,4 @@
-importScripts("https://sk8diceapp.com/precache-manifest.b0fe8319dfc098a2f912559f25c7e90e.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("https://sk8diceapp.com/precache-manifest.3a037adaeff001d10b0b03fa46db2ced.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable no-undef */
 /* eslint-disable no-restricted-globals */

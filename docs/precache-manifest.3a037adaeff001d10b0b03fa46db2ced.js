@@ -72,7 +72,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sk8diceapp.com/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "bb1ae1a65c7bda4672f53b6242abffb0",
+    "revision": "a68bdb478b44014454c351849b6659bd",
+    "url": "https://sk8diceapp.com/img/opengraph.png"
+  },
+  {
+    "revision": "e75a941f22154b0dce28bf05d7aa4aa4",
     "url": "https://sk8diceapp.com/index.html"
   },
   {
