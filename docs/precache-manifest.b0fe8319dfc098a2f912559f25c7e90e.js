@@ -8,6 +8,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sk8diceapp.com/favicon.ico"
   },
   {
+    "revision": "25ae5433803545ebbd4e0e1a23c2f4ea",
+    "url": "https://sk8diceapp.com/google6392760f988e4702.html"
+  },
+  {
     "revision": "136657ffc46504162bfc939e4092dc0a",
     "url": "https://sk8diceapp.com/img/icons/android-chrome-192x192.png"
   },
@@ -80,7 +84,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sk8diceapp.com/js/chunk-vendors.3ccd087f.js"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "revision": "a4e1e67bb0080275db80ab6931122993",
     "url": "https://sk8diceapp.com/robots.txt"
+  },
+  {
+    "revision": "ab50103d3b86477658070128f5e625d9",
+    "url": "https://sk8diceapp.com/sitemap.xml"
   }
 ]);
