@@ -1,4 +1,4 @@
-# skate-dice
+# SK8 DICE
 
 ## Project setup
 ```
